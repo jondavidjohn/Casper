@@ -113,6 +113,47 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-style: normal;
 }
 
+@charset "UTF-8";
+
+@font-face {
+  font-family: "jdjcom-icons";
+  src:url("../fonts/jdjcom-icons.eot");
+  src:url("../fonts/jdjcom-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/jdjcom-icons.woff") format("woff"),
+    url("../fonts/jdjcom-icons.ttf") format("truetype"),
+    url("../fonts/jdjcom-icons.svg#jdjcom-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-github:before,
+.icon-email:before,
+.icon-twitter-fa:before,
+.icon-stackoverflow:before {
+  font-family: "jdjcom-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "g";
+}
+.icon-email:before {
+  content: "e";
+}
+.icon-stackoverflow:before {
+  content: "s";
+}
+.icon-twitter-fa:before {
+  content: "t";
+}
+
 /* Apply these base styles to all icons */
 .icon-ghost:before, 
 .icon-feed:before, 
@@ -305,7 +346,7 @@ code, tt {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.85em;
-    white-space: pre-wrap;
+    overflow-x:auto;
     border: 1px solid #E3EDF3;
     background: #F7FAFB;
     border-radius: 2px;
@@ -325,8 +366,7 @@ pre {
 
 pre code, tt {
     font-size: inherit;
-    white-space: -moz-pre-wrap;
-    white-space: pre-wrap;
+    overflow-x: auto;
     background: transparent;
     border: none;
     padding: 0;
@@ -448,7 +488,7 @@ margin on the iframe, cause it breaks stuff. */
     display: table;
     width: 100%;
     height: 60%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: #fff;
     background: #303538 no-repeat center center;
@@ -490,6 +530,45 @@ margin on the iframe, cause it breaks stuff. */
     font-family: 'Noto Serif', serif;
     letter-spacing: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.social-links {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size:26px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: slategrey;
+    display: block;
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 45px;
+}
+
+.social-links a.icon-github {
+    font-size: 32px;
+    position: relative;
+    top: 3px;
+}
+
+.social-links a.icon-github:before,
+.social-links a.icon-twitter-fa:before {
+    position: relative;
+    top: 1px;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
