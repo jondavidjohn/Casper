@@ -466,6 +466,10 @@ margin on the iframe, cause it breaks stuff. */
     width: auto;
     margin: 0 auto;
     line-height: 0;
+    border:5px #f5f5f5 solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
@@ -623,7 +627,9 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-template .blog-title {
     display: inline-block;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 /* Keep images centred and within the bounds of the post-width */
@@ -975,6 +981,11 @@ margin on the iframe, cause it breaks stuff. */
 
 
 @media only screen and (max-width: 500px) {
+
+
+    #twitter-follow {
+        display:inline-block;
+    }
 
     .blog-logo img {
         max-height: 80px;
