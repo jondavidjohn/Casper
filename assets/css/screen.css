@@ -600,6 +600,10 @@ margin on the iframe, cause it breaks stuff. */
     background-color: #F1716E;
 }
 
+.social-links a.icon-instagram:hover {
+    background-color: #517fa4;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
