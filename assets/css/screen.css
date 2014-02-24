@@ -129,6 +129,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-github:before,
 .icon-email:before,
 .icon-twitter-fa:before,
+.icon-instagram:before,
 .icon-stackoverflow:before {
   font-family: "jdjcom-icons" !important;
   font-style: normal !important;
@@ -144,14 +145,21 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-github:before {
   content: "g";
 }
+
 .icon-email:before {
   content: "e";
 }
+
 .icon-stackoverflow:before {
   content: "s";
 }
+
 .icon-twitter-fa:before {
   content: "t";
+}
+
+.icon-instagram:before {
+  content: "i";
 }
 
 /* Apply these base styles to all icons */
@@ -551,12 +559,16 @@ margin on the iframe, cause it breaks stuff. */
     color: white;
     height: 40px;
     width: 40px;
-    background-color: slategrey;
+    background-color: #50585D;
     display: block;
     -webkit-border-radius: 50%
     -moz-border-radius: 50%;
     border-radius: 50%;
     line-height: 45px;
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    transition: background-color 500ms;
 }
 
 .social-links a.icon-github {
@@ -566,9 +578,26 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .social-links a.icon-github:before,
+.social-links a.icon-instagram:before,
 .social-links a.icon-twitter-fa:before {
     position: relative;
     top: 1px;
+}
+
+.social-links a.icon-twitter-fa:hover {
+    background-color: #55ACEE;
+}
+
+.social-links a.icon-github:hover {
+    background-color: #111;
+}
+
+.social-links a.icon-stackoverflow:hover {
+    background-color: #FF8F43;
+}
+
+.social-links a.icon-email:hover {
+    background-color: #F1716E;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
