@@ -1,0 +1,22 @@
+{
+  "name": "casper-jdjcom",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jondavidjohn/Casper",
+  "authors": [
+    "Jonathan Johnson <jon@crowdfavorite.com>"
+  ],
+  "description": "Forked Casper Ghost theme for jondavidjohn.com",
+  "main": "default.hbs",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "highlightjs": "8.0"
+  }
+}
